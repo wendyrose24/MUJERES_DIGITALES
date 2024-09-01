@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Números</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de Números del 1 al 10</h1>
+    <p>Abre la consola del navegador para ver los números del 1 al 10.</p>
+    <div id="resultado"></div>
+
+    <script>
+        // Definir variables
+        let conteoMayoresQueCinco = 0;
+
+        // Usar un ciclo para imprimir números
+        for (let i = 1; i <= 10; i++) {
+            console.log(i); // Imprimir el número en la consola
+
+            // Contar números mayores que 5
+            if (i > 5) {
+                conteoMayoresQueCinco++;
+            }
+        }
+
+        // Mostrar el resultado en la página
+        document.getElementById('resultado').innerText = `Cantidad de números mayores que 5: ${conteoMayoresQueCinco}`;
+    </script>
+</body>
+</html>
